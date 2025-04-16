@@ -3,8 +3,8 @@ from random import randint
 low,high = 1,10
 random_no: int = randint(low,high)
 print(f'Guess a number from {low} to {high} : ')
-
-while True:
+i = 0
+while i<3:
     try:
         user_guess: int = int(input('Guess: '))
         if user_guess < 1 or user_guess > 10:
@@ -20,3 +20,6 @@ while True:
     else:
         print('Guessed right')
         break
+    i=i+1
+
+print('Game Over' if i==3 else 'you won')
