@@ -16,9 +16,9 @@ while True:
             print('Thanks for playing')
             break
         a = int(n)
-        list = roll_dice(a)
-        print(*list)
-        print('Total : ',sum(list))
+        l = roll_dice(a)
+        print(*l)
+        print('Total : ',sum(l))
     except ValueError:
         print('Please enter a valid number')
 
