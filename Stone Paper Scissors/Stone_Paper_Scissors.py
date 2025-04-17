@@ -5,7 +5,7 @@ class RPS:
     def __init__(self):
         print('Welcome to RPS 9000: ')
         self.moves: dict = {'rock':'🪨','paper':'📜','scissors':'✂️'}
-        self.valid_moves: list[str] = list(self.moves.keys())
+        self.valid_moves = list(self.moves.keys())
         self.i = 0
         self.j = 0
 
