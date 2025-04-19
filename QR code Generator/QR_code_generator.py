@@ -9,7 +9,7 @@ class MyQR:
 
         try:
             self.qr.add_data(user_input)
-            qr_image = self.qr.make_image(fill_color = fg, back_color=bg)
+            qr_image = self.qr.make_image(fill_color=fg, back_color=bg)
             qr_image.save(file_name)
 
             print(f'Successfully created! ({file_name})')
